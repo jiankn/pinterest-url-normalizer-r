@@ -10,10 +10,17 @@
   "pinterest.pt", "pinterest.ro", "pinterest.se", "pinterest.sk"
 )
 
+.pinterest_regional_subdomains <- c(
+  "at", "au", "be", "br", "ca", "ch", "cl", "co", "cz", "de", "dk",
+  "es", "fi", "fr", "gr", "hu", "id", "ie", "it", "jp", "kr", "mx",
+  "nl", "no", "nz", "pe", "ph", "pl", "pt", "ro", "se", "sk", "tr",
+  "uk"
+)
+
 .pinterest_reserved_paths <- c(
   "business", "categories", "explore", "help", "ideas", "login",
-  "logout", "oauth", "pin", "resource", "search", "settings", "signup",
-  "today", "topics"
+  "logout", "oauth", "pin", "pin-builder", "resource", "search", "settings",
+  "signup", "today", "topics"
 )
 
 .pinterest_error <- function(code, message) {
@@ -28,7 +35,11 @@
   host <- tolower(host)
   host %in% c("pinterest.com", "www.pinterest.com", "m.pinterest.com") ||
     host %in% .pinterest_country_hosts ||
-    (startsWith(host, "www.") && substring(host, 5L) %in% .pinterest_country_hosts)
+    (startsWith(host, "www.") && substring(host, 5L) %in% .pinterest_country_hosts) ||
+    (
+      endsWith(host, ".pinterest.com") &&
+        sub("\\.pinterest\\.com$", "", host) %in% .pinterest_regional_subdomains
+    )
 }
 
 .split_path <- function(path) {
