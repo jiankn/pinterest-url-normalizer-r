@@ -1,3 +1,7 @@
+# pinteresturl 0.1.2
+
+- Standardize the homepage keyword link as `Pinterest image downloader`.
+
 # pinteresturl 0.1.1
 
 - Point image-workflow documentation and package metadata to the SavePinner

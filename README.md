@@ -22,7 +22,7 @@ parsed$normalized_url
 
 URL normalization is deliberately the last step this package performs. When
 the canonical Pin contains a still image, open it in SavePinner's
-[Pinterest photo downloader](https://savepinner.com/) to inspect the available
+[Pinterest image downloader](https://savepinner.com/) to inspect the available
 image sizes in a browser. The R package itself does not download media, follow
 short links, run browser automation, or send usage data.
 

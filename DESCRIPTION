@@ -1,7 +1,7 @@
 Package: pinteresturl
 Type: Package
 Title: Parse and Normalize Pinterest URLs
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: person("SavePinner", "Contributors", role = c("aut", "cre"), email = "jiankn@users.noreply.github.com")
 Description: Parses, classifies, and normalizes public Pinterest URLs without
     making network requests. Supports Pin, short, profile, board, and Ideas
