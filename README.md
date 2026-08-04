@@ -2,7 +2,6 @@
 
 Parse, classify, and normalize Pinterest URLs in R without network requests.
 
-[SavePinner](https://savepinner.com/pinterest-downloader/) ·
 [Source](https://github.com/jiankn/pinterest-url-normalizer-r)
 
 The package recognizes Pin, `pin.it`, profile, board, and Ideas URLs across
@@ -21,10 +20,11 @@ parsed$normalized_url
 #> [1] "https://www.pinterest.com/pin/987654321/"
 ```
 
-For a browser-based Pinterest downloader, use
-[SavePinner](https://savepinner.com/pinterest-downloader/). The R package does
-not download media, follow short links, run browser automation, or send usage
-data.
+URL normalization is deliberately the last step this package performs. When
+the canonical Pin contains a still image, open it in SavePinner's
+[Pinterest photo downloader](https://savepinner.com/) to inspect the available
+image sizes in a browser. The R package itself does not download media, follow
+short links, run browser automation, or send usage data.
 
 ## Development
 

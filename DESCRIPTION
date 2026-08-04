@@ -1,14 +1,14 @@
 Package: pinteresturl
 Type: Package
 Title: Parse and Normalize Pinterest URLs
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: person("SavePinner", "Contributors", role = c("aut", "cre"), email = "jiankn@users.noreply.github.com")
 Description: Parses, classifies, and normalizes public Pinterest URLs without
     making network requests. Supports Pin, short, profile, board, and Ideas
     URLs across Pinterest country domains while rejecting lookalike hosts,
     credentials, non-HTTPS URLs, encoded paths, and non-standard ports.
 License: MIT + file LICENSE
-URL: https://savepinner.com/pinterest-downloader/, https://github.com/jiankn/pinterest-url-normalizer-r
+URL: https://savepinner.com/, https://github.com/jiankn/pinterest-url-normalizer-r
 BugReports: https://github.com/jiankn/pinterest-url-normalizer-r/issues
 Encoding: UTF-8
 Suggests:
